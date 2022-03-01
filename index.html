@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <link href="img/favicon.png" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="css/main.css?v=10397" rel="stylesheet" type="text/css">
-    <script src="js/main.js?v=10397" type="text/javascript"></script>
+    <link href="css/main.css?v=40584" rel="stylesheet" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.7/hammer.min.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script src="js/main.js?v=40584" type="text/javascript"></script>
     <!-- Meta tags facebook-->
     <meta property="og:title" content="#">
     <meta property="og:description" content="#">
@@ -28,7 +31,7 @@
             <div class="header__mobile">
               <div class="header__logo"><a href="index.html"><img src="img/icons/logo-feria-virtual.svg"></a></div>
               <div class="header__text"> <span><strong>17,18,19</strong> y <strong>20</strong> de <strong>marzo de 2022.</strong></span></div>
-              <div class="header__button"><a data-modal-register class="btn">Inscribase Aquí<span class="fa fa-pencil"></span></a></div>
+              <div class="header__button"><a data-modal-register class="btn">Inscripción<span class="fa fa-pencil"></span></a></div>
             </div>
             <div class="header__desktop">
               <div class="header__logo"><a href="index.html"><img src="img/icons/logo-feria-virtual.svg"></a></div>
@@ -58,8 +61,8 @@
               </div>
             </div>
             <div class="header__right">
-              <div class="header__item header__item--button"><a data-modal-register class="btn">Inscribase Aquí<span class="fa fa-pencil"></span></a></div>
-              <div class="header__item header__item--button"><a data-modal-login class="btn">Ingresar<span class="fa fa-user"></span></a></div>
+              <div class="header__item header__item--button"><a data-modal-register class="btn">Inscripción<span class="fa fa-pencil"></span></a></div>
+              <div class="header__item header__item--button"><a data-modal-login class="btn">Ingrese Aquí<span class="fa fa-user"></span></a></div>
               <div class="header__item header__item--partners">
                 <div class="header__partners"> <img src="img/icons/logo-sodimac-header.png"></div>
               </div>
@@ -85,7 +88,7 @@
                     <div class="section__body__va">
                       <h1 class="section__title">¡Sea parte del evento de capacitación más grande de Latinoamérica!</h1>
                       <p class="section__description">Inscríbase de forma gratuita y participe el próximo 17, 18, 19 y 20 de marzo en la edición 2022 de la Gran Feria de Capacitación Sodimac Constructor.</p>
-                      <div class="section__buttons"><a data-modal-register class="btn btn--transparent">Inscríbete aquí<span class="fa fa-angle-right"></span></a></div>
+                      <div class="section__buttons"><a data-modal-register class="btn btn--transparent">Inscripción<span class="fa fa-angle-right"></span></a></div>
                     </div>
                   </div>
                 </div>
@@ -317,9 +320,9 @@
                     <div class="bg"> <img src="img/uploads/2.jpeg"></div>
                   </div>
                   <div class="article__body"> 
-                    <h4 class="article__title">Erat vel cubilia conubia
+                    <h4 class="article__title">Lacus adipiscing eu placerat
                     </h4>
-                    <p class="article__description">Convallis dui tempus eros eros maecenas pellentesque class mi egestas ac gravida.
+                    <p class="article__description">Dui placerat curabitur suscipit etiam mi ullamcorper sodales turpis pellentesque sem curae.
                     </p><a href="single-blog.html" class="btn btn--link">Ver más <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -330,9 +333,9 @@
                     <div class="bg"> <img src="img/uploads/3.jpeg"></div>
                   </div>
                   <div class="article__body"> 
-                    <h4 class="article__title">Vivamus mauris blandit congue
+                    <h4 class="article__title">Cursus aptent posuere quisque
                     </h4>
-                    <p class="article__description">In risus adipiscing ac pellentesque mauris himenaeos inceptos lacinia fringilla netus sagittis.
+                    <p class="article__description">Elit donec sem sapien est torquent massa nullam tempor interdum vulputate eget.
                     </p><a href="single-blog.html" class="btn btn--link">Ver más <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -343,9 +346,9 @@
                     <div class="bg"> <img src="img/uploads/1.jpg"></div>
                   </div>
                   <div class="article__body"> 
-                    <h4 class="article__title">Nostra sed varius potenti
+                    <h4 class="article__title">Magna rutrum nostra enim
                     </h4>
-                    <p class="article__description">Tellus elementum ullamcorper leo lectus primis etiam ut id fusce cubilia viverra.
+                    <p class="article__description">Massa luctus laoreet congue neque tristique pulvinar fringilla vestibulum laoreet curabitur risus.
                     </p><a href="single-blog.html" class="btn btn--link">Ver más <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -361,16 +364,16 @@
             <div class="modal__close"><span class="fa fa-close">	</span></div>
             <div class="modal__content">
               <h3 class="modal__title">Registrarse</h3>
-              <p class="modal__description">Ullamcorper aliquam quisque lectus luctus eget gravida a donec neque viverra conubia metus donec dapibus.
+              <p class="modal__description">Lobortis primis adipiscing ad nibh colus urna tempor nostra fames nec duis tempor aliquam viverra.
               </p>
               <div class="modal__form">
-                <form class="form form--register">
+                <form class="form form--register form--validation">
                   <div class="cols">
                     <div class="col-xs-12 col-md-6">
                       <div class="form__element">
                         <div class="form__title">Rut</div>
                         <div class="form__input">
-                          <input type="text" name="#" required>
+                          <input type="rut" name="#" placeholder="Ingrese rut sin puntos ni guión" required class="input-rut">
                         </div>
                       </div>
                     </div>
@@ -394,7 +397,7 @@
                       <div class="form__element">
                         <div class="form__title">Email</div>
                         <div class="form__input">
-                          <input type="text" name="#" required>
+                          <input type="email" name="#" required>
                         </div>
                       </div>
                     </div>
@@ -402,7 +405,7 @@
                       <div class="form__element">
                         <div class="form__title">Teléfono</div>
                         <div class="form__input">
-                          <input type="text" name="#" required>
+                          <input id="phone" type="text" name="#" value="+569" required>
                         </div>
                       </div>
                     </div>
@@ -413,6 +416,7 @@
                           <select name="#" required>
                             <option value="#">Masculino</option>
                             <option value="#">Femenino</option>
+                            <option value="#">Otro</option>
                           </select>
                         </div>
                       </div>
@@ -454,9 +458,8 @@
           <div class="modal__box">
             <div class="modal__close"><span class="fa fa-close">	</span></div>
             <div class="modal__content">
-              <h3 class="modal__title">Ingresar</h3>
-              <p class="modal__description">Ultricies rutrum dui scelerisque dui massa cursus fames erat blandit aenean tristique aptent malesuada primis.
-              </p>
+              <h3 class="modal__title">Ingrese su rut para poder acceder a la Gran Feria de Capacitación</h3>
+              <p class="modal__description">Si no está inscrito, <strong data-modal-inscripcion>Presione acá</strong></p>
               <div class="modal__form">
                 <form class="form form--register">
                   <div class="cols">

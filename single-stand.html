@@ -5,10 +5,13 @@
     <meta charset="UTF-8">
     <link href="img/favicon.png" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="css/main.css?v=35691" rel="stylesheet" type="text/css">
-    <script src="js/splide.js?v=35691" type="text/javascript"></script>
-    <script src="js/main.js?v=35691" type="text/javascript"></script>
-    <script src="js/splide-extension-auto-scroll.js?v=35691" type="text/javascript"></script>
+    <link href="css/main.css?v=40672" rel="stylesheet" type="text/css">
+    <script src="js/splide.js?v=40672" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.7/hammer.min.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script src="js/splide-extension-auto-scroll.js?v=40672" type="text/javascript"></script>
+    <script src="js/main.js?v=40672" type="text/javascript"></script>
     <!-- Meta tags facebook-->
     <meta property="og:title" content="#">
     <meta property="og:description" content="#">
@@ -71,16 +74,15 @@
       </div>
     </header>
     <div id="sections">
-      <section class="section--header">
+      <section class="section--header section--header--stand">
         <div class="section__bg"> 
-          <div class="bg"> <img src="img/uploads/1.jpg"></div>
+          <div class="bg"> <img src="img/uploads/6.jpeg"></div>
         </div>
         <div class="section__wrap section__wrap--header--media">
           <div class="section__media">
-            <div class="section__content"> 
-              <h1 class="section__title">Nombre Stand</h1>
-              <p class="section__description">Habitasse erat curabitur eu taciti iaculis cras mattis libero nostra eros potenti ut at elementum.
-              </p>
+            <div class="section__content">
+              <h1 class="h2 section__title">Nombre Stand</h1>
+              <!--qp.section__description: +lorem(15)-->
               <div class="cols">
                 <div class="section__flex">
                   <div class="col-md-8"> 
@@ -90,10 +92,15 @@
                     
                     -->
                     <div class="section__info">
+                      <div class="section__logo"> <img src="img/marcas/1.png"></div>
                       <h3 class="section__title">Círculo de especialistas</h3>
                       <p class="section__description">Vitacura 111 Depto 111 - Vitacura<span class="fa fa-map"></span></p>
                       <p class="section__description">Teléfono - +56 9 7 123 45 67<span class="fa fa-phone"></span></p>
                       <p class="section__description">	contacto@granferiadecapacitacion.cl<span class="fa fa-envelope"></span></p>
+                      <div class="section__buttons">
+                        <h4 class="section__title">Material de apoyo</h4>
+                        <div class="section__buttons__flex"><a href="#" class="btn">Boton 1</a><a href="#" class="btn">Boton 2</a></div>
+                      </div>
                     </div>
                   </div>
                   <div class="col-md-4"> 
@@ -118,7 +125,7 @@
         </div>
       </section>
       <section class="section--downloads"> 
-        <div class="section__wrap"> 
+        <div class="section__wrap section__wrap--sm">
           <div class="section__header"> 
             <h3 class="section__title">Material descargable </h3>
           </div>
@@ -149,14 +156,14 @@
         </div>
       </section>
       <section class="section--sliders section--dark">
-        <div class="section__wrap"> 
+        <div class="section__wrap section__wrap--sm"> 
           <div class="section__header"> 
             <h3 class="section__title">Fotos y videos </h3>
           </div>
           <div class="section__body">
             <div class="cols"> 
               <div class="col-md-6"> 
-                <article class="article--slider"> 
+                <article data-modal-pictures class="article--slider">
                   <div class="article__bg"> 
                     <div class="bg"> <img src="img/uploads/1.jpg"></div>
                   </div>
@@ -167,7 +174,7 @@
                 </article>
               </div>
               <div class="col-md-6"> 
-                <article class="article--slider"> 
+                <article data-modal-videos class="article--slider"> 
                   <div class="article__bg"> 
                     <div class="bg"> <img src="img/uploads/2.jpg"></div>
                   </div>
@@ -182,7 +189,7 @@
         </div>
       </section>
       <section class="section--products"> 
-        <div class="section__wrap"> 
+        <div class="section__wrap section__wrap--sm"> 
           <div class="section__header"> 
             <h3 class="section__title">Productos destacados</h3>
           </div>
@@ -236,6 +243,67 @@
           </div>
         </div>
       </section>
+      <div class="modal modal--pictures">
+        <div class="modal__back"></div>
+        <div class="modal__front">
+          <div class="modal__box">
+            <div class="modal__close"><span class="fa fa-close">	</span></div>
+            <div class="modal__slider">
+              <div class="slider"> 
+                <div class="slides"> 
+                  <div class="slide"> 
+                    <div class="modal__image"> <img src="img/uploads/1.jpg"></div>
+                  </div>
+                  <div class="slide"> 
+                    <div class="modal__image"> <img src="img/uploads/2.jpg"></div>
+                  </div>
+                  <div class="slide"> 
+                    <div class="modal__image"> <img src="img/uploads/3.jpg"></div>
+                  </div>
+                  <div class="slide"> 
+                    <div class="modal__image"> <img src="img/uploads/4.jpg"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal--videos">
+        <div class="modal__back"></div>
+        <div class="modal__front">
+          <div class="modal__box">
+            <div class="modal__close"><span class="fa fa-close">	</span></div>
+            <div class="modal__slider">
+              <div class="slider"> 
+                <div class="slides"> 
+                  <div class="slide"> 
+                    <div class="modal__video"> 
+                      <video id="videohome">
+                        <source src="videos/video_01.mp4" type="video/mp4">
+                      </video>
+                    </div>
+                  </div>
+                  <div class="slide"> 
+                    <div class="modal__video"> 
+                      <video id="videohome">
+                        <source src="videos/video_01.mp4" type="video/mp4">
+                      </video>
+                    </div>
+                  </div>
+                  <div class="slide"> 
+                    <div class="modal__video"> 
+                      <video id="videohome">
+                        <source src="videos/video_01.mp4" type="video/mp4">
+                      </video>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="modal modal--contact">
         <div class="modal__back"></div>
         <div class="modal__front">
@@ -275,6 +343,133 @@
                         <div class="form__title">Mensaje</div>
                         <div class="form__input">
                           <textarea name="#" required></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12">
+                      <div class="form__button">
+                        <button class="btn">Enviar<span class="fa fa-pencil"></span></button>
+                      </div>
+                      <div class="form__alert"><span></span></div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal--profile">
+        <div class="modal__back"></div>
+        <div class="modal__front">
+          <div class="modal__box">
+            <div class="modal__close"><span class="fa fa-close">	</span></div>
+            <div class="modal__content">
+              <h3 class="modal__title">Complete su información</h3>
+              <div class="modal__form">
+                <form class="form form--register">
+                  <div class="cols">
+                    <div class="col-xs-12">
+                      <div class="form__element">
+                        <div class="form__title">Título del dato</div>
+                        <div class="form__input">
+                          <input type="text" name="#" placeholder="Restaurador de muebles" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12">
+                      <div class="form__element">
+                        <div class="form__title">Email</div>
+                        <div class="form__input">
+                          <input type="text" name="#" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12">
+                      <div class="form__element">
+                        <div class="form__title">Teléfono / Celular</div>
+                        <div class="form__input">
+                          <input type="text" name="#" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12">
+                      <div class="form__element">
+                        <div class="form__title">Rubro</div>
+                        <div class="form__input"> 
+                          <select name="#">
+                            <option value="#">Primis
+                            </option>
+                            <option value="#">Habitasse
+                            </option>
+                            <option value="#">A
+                            </option>
+                            <option value="#">Sagittis
+                            </option>
+                            <option value="#">Aliquam
+                            </option>
+                            <option value="#">Fermentum
+                            </option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-6">
+                      <div class="form__element">
+                        <div class="form__title">Ciudad</div>
+                        <div class="form__input"> 
+                          <select name="#">
+                            <option value="#">Dictumst
+                            </option>
+                            <option value="#">Curabitur
+                            </option>
+                            <option value="#">Euismod
+                            </option>
+                            <option value="#">Nisl
+                            </option>
+                            <option value="#">Ac
+                            </option>
+                            <option value="#">Pellentesque
+                            </option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-6">
+                      <div class="form__element">
+                        <div class="form__title">Comuna</div>
+                        <div class="form__input"> 
+                          <select name="#">
+                            <option value="#">Varius
+                            </option>
+                            <option value="#">Platea
+                            </option>
+                            <option value="#">Scelerisque
+                            </option>
+                            <option value="#">Egestas
+                            </option>
+                            <option value="#">Molestie
+                            </option>
+                            <option value="#">Ut
+                            </option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12">
+                      <div class="form__element">
+                        <div class="form__title">Descripción del servicio</div>
+                        <div class="form__input">
+                          <textarea name="#" required></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12">
+                      <div class="modal__checkboxs">
+                        <div class="modal__checkbox">
+                          <label>
+                            <input type="checkbox" name="#" value="1" required>Acepto <a href="#" >Términos y condiciones </a>
+                          </label>
                         </div>
                       </div>
                     </div>

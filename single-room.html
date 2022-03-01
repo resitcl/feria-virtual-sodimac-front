@@ -5,10 +5,13 @@
     <meta charset="UTF-8">
     <link href="img/favicon.png" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="css/main.css?v=92404" rel="stylesheet" type="text/css">
-    <script src="js/splide.js?v=92404" type="text/javascript"></script>
-    <script src="js/main.js?v=92404" type="text/javascript"></script>
-    <script src="js/splide-extension-auto-scroll.js?v=92404" type="text/javascript"></script>
+    <link href="css/main.css?v=49901" rel="stylesheet" type="text/css">
+    <script src="js/splide.js?v=49901" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.7/hammer.min.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script src="js/splide-extension-auto-scroll.js?v=49901" type="text/javascript"></script>
+    <script src="js/main.js?v=49901" type="text/javascript"></script>
     <!-- Meta tags facebook-->
     <meta property="og:title" content="#">
     <meta property="og:description" content="#">
@@ -71,7 +74,7 @@
       </div>
     </header>
     <div id="sections">
-      <section class="section--header">
+      <section class="section--header section--header--room">
         <div class="section__bg"> 
           <div class="bg"> <img src="img/uploads/salas.jpg"></div>
         </div>
@@ -79,7 +82,7 @@
           <div class="section__media">
             <div class="section__content"> 
               <h1 class="section__title">Nombre Sala</h1>
-              <p class="section__description">Porta arcu sagittis imperdiet tristique cursus curabitur pharetra est sociosqu tincidunt iaculis sagittis massa congue.
+              <p class="section__description">Nam duis diam eros vulputate placerat aliquam purus himenaeos suscipit placerat colus elementum at tortor.
               </p>
               <div class="cols">
                 <div class="section__flex">
@@ -91,10 +94,76 @@
                     iframe(src="https://www.youtube.com/embed/vIJoQHEvwrU" frameborder="0" allowfullscreen)
                     
                     -->
+                    <div class="section__info">
+                      <h3 class="section__title">Visitar Stand de la marca</h3><a href="#" class="btn">Ver stand</a>
+                      <div class="section__buttons">
+                        <h4 class="section__title">Material de apoyo</h4>
+                        <div class="section__buttons__flex"><a href="#" class="btn">Boton 1</a><a href="#" class="btn">Boton 2</a></div>
+                      </div>
+                    </div>
                   </div>
                   <div class="col-md-4"> 
+                    <h3 class="section__title">Chat en vivo</h3>
                     <div class="section__chat">
                       <form class="form__chat">
+                        <div class="section__messages">
+                          <div class="section__msn"> 
+                            <div class="section__avatar"><img src="img/icons/avatar-1.png"></div>
+                            <div class="section__text"> 
+                              <p>Colus semper class nulla risus
+                              </p>
+                            </div>
+                          </div>
+                          <div class="section__msn section__msn--right">
+                            <div class="section__avatar"><img src="img/icons/avatar-1.png"></div>
+                            <div class="section__text"> 
+                              <p>Sem phasellus porttitor hendrerit cras quam pharetra euismod viverra taciti tristique interdum.
+                              </p>
+                            </div>
+                          </div>
+                          <div class="section__msn"> 
+                            <div class="section__avatar"><img src="img/icons/avatar-1.png"></div>
+                            <div class="section__text"> 
+                              <p>Ac ligula aliquam ac erat mattis vivamus hac
+                              </p>
+                            </div>
+                          </div>
+                          <div class="section__msn section__msn--right">
+                            <div class="section__avatar"><img src="img/icons/avatar-1.png"></div>
+                            <div class="section__text">
+                              <p>Pharetra malesuada justo tempor congue aptent suspendisse ac convallis potenti. Tellus condimentum vitae etiam curae erat semper velit sagittis egestas conubia nisl donec ante odio.
+                              </p>
+                            </div>
+                          </div>
+                          <div class="section__msn"> 
+                            <div class="section__avatar"><img src="img/icons/avatar-1.png"></div>
+                            <div class="section__text"> 
+                              <p>Donec himenaeos iaculis diam nunc
+                              </p>
+                            </div>
+                          </div>
+                          <div class="section__msn section__msn--right">
+                            <div class="section__avatar"><img src="img/icons/avatar-1.png"></div>
+                            <div class="section__text"> 
+                              <p>Gravida augue tristique viverra cursus pulvinar phasellus netus hac volutpat odio curae.
+                              </p>
+                            </div>
+                          </div>
+                          <div class="section__msn"> 
+                            <div class="section__avatar"><img src="img/icons/avatar-1.png"></div>
+                            <div class="section__text"> 
+                              <p>Est ad posuere sagittis tincidunt volutpat sociosqu etiam
+                              </p>
+                            </div>
+                          </div>
+                          <div class="section__msn section__msn--right">
+                            <div class="section__avatar"><img src="img/icons/avatar-1.png"></div>
+                            <div class="section__text">
+                              <p>Curabitur sed aliquam tellus eu leo hac taciti vitae venenatis. Vestibulum suspendisse massa gravida placerat libero suscipit pretium leo ullamcorper phasellus ullamcorper quisque ultrices potenti.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
                         <div class="section__textarea">
                           <textarea></textarea>
                         </div>
@@ -125,7 +194,7 @@
                     </div>
                     <div class="article__tag">Sala 1</div>
                     <div class="article__body">
-                      <h5 class="article__title">Curabitur cras cubilia taciti imperdiet nulla aenean quis commodo cursus neque lectus.
+                      <h5 class="article__title">Praesent in odio duis vehicula maecenas dapibus praesent proin felis vestibulum senectus.
                       </h5><a href="single-room.html" class="btn btn--link">Ver capacitación<span class="fa fa-angle-right"></span></a>
                     </div>
                   </article>
@@ -137,7 +206,7 @@
                     </div>
                     <div class="article__tag">Sala 2</div>
                     <div class="article__body">
-                      <h5 class="article__title">Ullamcorper etiam per quisque tincidunt mi luctus suscipit eros pharetra purus per.
+                      <h5 class="article__title">Mattis pharetra netus suscipit interdum diam eu orci consectetur id vivamus sagittis.
                       </h5><a href="single-room.html" class="btn btn--link">Ver capacitación<span class="fa fa-angle-right"></span></a>
                     </div>
                   </article>
@@ -149,7 +218,7 @@
                     </div>
                     <div class="article__tag">Sala 3</div>
                     <div class="article__body">
-                      <h5 class="article__title">Pretium conubia metus tristique sem interdum consectetur curabitur congue metus congue pharetra.
+                      <h5 class="article__title">Nibh sodales et sollicitudin justo aliquet integer at aliquet consequat commodo ut.
                       </h5><a href="single-room.html" class="btn btn--link">Ver capacitación<span class="fa fa-angle-right"></span></a>
                     </div>
                   </article>
@@ -161,7 +230,7 @@
                     </div>
                     <div class="article__tag">Sala 4</div>
                     <div class="article__body">
-                      <h5 class="article__title">In urna fusce laoreet facilisis curabitur integer lacus vehicula cubilia pretium felis.
+                      <h5 class="article__title">Lectus primis eleifend vitae in viverra nam torquent tempor felis elementum lectus.
                       </h5><a href="single-room.html" class="btn btn--link">Ver capacitación<span class="fa fa-angle-right"></span></a>
                     </div>
                   </article>
@@ -173,7 +242,7 @@
                     </div>
                     <div class="article__tag">Sala 5</div>
                     <div class="article__body">
-                      <h5 class="article__title">Rutrum sollicitudin vehicula quam justo felis leo taciti leo egestas blandit etiam.
+                      <h5 class="article__title">Cubilia hendrerit turpis aenean dictum pulvinar est fermentum ad ac lacinia vestibulum.
                       </h5><a href="single-room.html" class="btn btn--link">Ver capacitación<span class="fa fa-angle-right"></span></a>
                     </div>
                   </article>
@@ -185,7 +254,7 @@
                     </div>
                     <div class="article__tag">Sala 6</div>
                     <div class="article__body">
-                      <h5 class="article__title">Habitasse lacinia quis est lacus et vestibulum sem primis malesuada vitae est.
+                      <h5 class="article__title">Praesent vel egestas facilisis pharetra vel vestibulum justo gravida taciti cras quam.
                       </h5><a href="single-room.html" class="btn btn--link">Ver capacitación<span class="fa fa-angle-right"></span></a>
                     </div>
                   </article>
@@ -234,6 +303,133 @@
                         <div class="form__title">Mensaje</div>
                         <div class="form__input">
                           <textarea name="#" required></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12">
+                      <div class="form__button">
+                        <button class="btn">Enviar<span class="fa fa-pencil"></span></button>
+                      </div>
+                      <div class="form__alert"><span></span></div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal--profile">
+        <div class="modal__back"></div>
+        <div class="modal__front">
+          <div class="modal__box">
+            <div class="modal__close"><span class="fa fa-close">	</span></div>
+            <div class="modal__content">
+              <h3 class="modal__title">Complete su información</h3>
+              <div class="modal__form">
+                <form class="form form--register">
+                  <div class="cols">
+                    <div class="col-xs-12">
+                      <div class="form__element">
+                        <div class="form__title">Título del dato</div>
+                        <div class="form__input">
+                          <input type="text" name="#" placeholder="Restaurador de muebles" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12">
+                      <div class="form__element">
+                        <div class="form__title">Email</div>
+                        <div class="form__input">
+                          <input type="text" name="#" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12">
+                      <div class="form__element">
+                        <div class="form__title">Teléfono / Celular</div>
+                        <div class="form__input">
+                          <input type="text" name="#" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12">
+                      <div class="form__element">
+                        <div class="form__title">Rubro</div>
+                        <div class="form__input"> 
+                          <select name="#">
+                            <option value="#">Morbi
+                            </option>
+                            <option value="#">Dictum
+                            </option>
+                            <option value="#">Volutpat
+                            </option>
+                            <option value="#">Nullam
+                            </option>
+                            <option value="#">Per
+                            </option>
+                            <option value="#">Turpis
+                            </option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-6">
+                      <div class="form__element">
+                        <div class="form__title">Ciudad</div>
+                        <div class="form__input"> 
+                          <select name="#">
+                            <option value="#">Class
+                            </option>
+                            <option value="#">Platea
+                            </option>
+                            <option value="#">Varius
+                            </option>
+                            <option value="#">Pharetra
+                            </option>
+                            <option value="#">Integer
+                            </option>
+                            <option value="#">Primis
+                            </option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-6">
+                      <div class="form__element">
+                        <div class="form__title">Comuna</div>
+                        <div class="form__input"> 
+                          <select name="#">
+                            <option value="#">Tincidunt
+                            </option>
+                            <option value="#">Placerat
+                            </option>
+                            <option value="#">Adipiscing
+                            </option>
+                            <option value="#">Hendrerit
+                            </option>
+                            <option value="#">Elementum
+                            </option>
+                            <option value="#">Mi
+                            </option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12">
+                      <div class="form__element">
+                        <div class="form__title">Descripción del servicio</div>
+                        <div class="form__input">
+                          <textarea name="#" required></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12">
+                      <div class="modal__checkboxs">
+                        <div class="modal__checkbox">
+                          <label>
+                            <input type="checkbox" name="#" value="1" required>Acepto <a href="#" >Términos y condiciones </a>
+                          </label>
                         </div>
                       </div>
                     </div>

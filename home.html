@@ -5,10 +5,13 @@
     <meta charset="UTF-8">
     <link href="img/favicon.png" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="css/main.css?v=97554" rel="stylesheet" type="text/css">
-    <script src="js/splide.js?v=97554" type="text/javascript"></script>
-    <script src="js/main.js?v=97554" type="text/javascript"></script>
-    <script src="js/splide-extension-auto-scroll.js?v=97554" type="text/javascript"></script>
+    <link href="css/main.css?v=14923" rel="stylesheet" type="text/css">
+    <script src="js/splide.js?v=14923" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.7/hammer.min.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script src="js/splide-extension-auto-scroll.js?v=14923" type="text/javascript"></script>
+    <script src="js/main.js?v=14923" type="text/javascript"></script>
     <!-- Meta tags facebook-->
     <meta property="og:title" content="#">
     <meta property="og:description" content="#">
@@ -391,9 +394,9 @@
                     <div class="bg"> <img src="img/uploads/2.jpeg"></div>
                   </div>
                   <div class="article__body"> 
-                    <h4 class="article__title">Augue ut odio scelerisque
+                    <h4 class="article__title">Lacinia leo rhoncus ut
                     </h4>
-                    <p class="article__description">Urna lectus donec imperdiet pharetra non fermentum vulputate nec aliquam sem dapibus.
+                    <p class="article__description">Molestie eros litora feugiat dapibus pretium quam ullamcorper molestie ornare fermentum sodales.
                     </p><a href="#" class="btn btn--link">Ver más <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -404,9 +407,9 @@
                     <div class="bg"> <img src="img/uploads/3.jpeg"></div>
                   </div>
                   <div class="article__body"> 
-                    <h4 class="article__title">Primis diam phasellus molestie
+                    <h4 class="article__title">Netus accumsan nisl donec
                     </h4>
-                    <p class="article__description">Suscipit fringilla malesuada fermentum non adipiscing facilisis aenean feugiat ullamcorper eleifend per.
+                    <p class="article__description">Imperdiet hac tempus tempus hendrerit sagittis aptent maecenas accumsan nostra massa netus.
                     </p><a href="#" class="btn btn--link">Ver más <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -417,9 +420,9 @@
                     <div class="bg"> <img src="img/uploads/1.jpg"></div>
                   </div>
                   <div class="article__body"> 
-                    <h4 class="article__title">Vestibulum volutpat adipiscing proin
+                    <h4 class="article__title">Ac dapibus vivamus aenean
                     </h4>
-                    <p class="article__description">Senectus blandit porttitor placerat convallis auctor habitasse conubia accumsan tempus varius sollicitudin.
+                    <p class="article__description">Senectus per vulputate blandit bibendum cubilia nisl potenti ad fusce dui nulla.
                     </p><a href="#" class="btn btn--link">Ver más <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -488,6 +491,10 @@
               <video id="videohome" playsinline autoplay muted>
                 <source src="videos/video_01.mp4" type="video/mp4">
               </video>
+              <div class="modal__sound">
+                <div data-sound-off class="modal__sound__icon"><img src="img/icons/audio-on.png"></div>
+                <div data-sound-on class="modal__sound__icon modal__sound__icon--show"><img src="img/icons/audio-off.png"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -531,6 +538,133 @@
                         <div class="form__title">Mensaje</div>
                         <div class="form__input">
                           <textarea name="#" required></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12">
+                      <div class="form__button">
+                        <button class="btn">Enviar<span class="fa fa-pencil"></span></button>
+                      </div>
+                      <div class="form__alert"><span></span></div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal--profile">
+        <div class="modal__back"></div>
+        <div class="modal__front">
+          <div class="modal__box">
+            <div class="modal__close"><span class="fa fa-close">	</span></div>
+            <div class="modal__content">
+              <h3 class="modal__title">Complete su información</h3>
+              <div class="modal__form">
+                <form class="form form--register">
+                  <div class="cols">
+                    <div class="col-xs-12">
+                      <div class="form__element">
+                        <div class="form__title">Título del dato</div>
+                        <div class="form__input">
+                          <input type="text" name="#" placeholder="Restaurador de muebles" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12">
+                      <div class="form__element">
+                        <div class="form__title">Email</div>
+                        <div class="form__input">
+                          <input type="text" name="#" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12">
+                      <div class="form__element">
+                        <div class="form__title">Teléfono / Celular</div>
+                        <div class="form__input">
+                          <input type="text" name="#" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12">
+                      <div class="form__element">
+                        <div class="form__title">Rubro</div>
+                        <div class="form__input"> 
+                          <select name="#">
+                            <option value="#">Feugiat
+                            </option>
+                            <option value="#">Nibh
+                            </option>
+                            <option value="#">Egestas
+                            </option>
+                            <option value="#">Imperdiet
+                            </option>
+                            <option value="#">Sem
+                            </option>
+                            <option value="#">Porttitor
+                            </option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-6">
+                      <div class="form__element">
+                        <div class="form__title">Ciudad</div>
+                        <div class="form__input"> 
+                          <select name="#">
+                            <option value="#">Convallis
+                            </option>
+                            <option value="#">Hendrerit
+                            </option>
+                            <option value="#">Velit
+                            </option>
+                            <option value="#">Hac
+                            </option>
+                            <option value="#">Dictumst
+                            </option>
+                            <option value="#">Vitae
+                            </option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-6">
+                      <div class="form__element">
+                        <div class="form__title">Comuna</div>
+                        <div class="form__input"> 
+                          <select name="#">
+                            <option value="#">Venenatis
+                            </option>
+                            <option value="#">Ultricies
+                            </option>
+                            <option value="#">Eu
+                            </option>
+                            <option value="#">Tempus
+                            </option>
+                            <option value="#">Dapibus
+                            </option>
+                            <option value="#">Morbi
+                            </option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12">
+                      <div class="form__element">
+                        <div class="form__title">Descripción del servicio</div>
+                        <div class="form__input">
+                          <textarea name="#" required></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12">
+                      <div class="modal__checkboxs">
+                        <div class="modal__checkbox">
+                          <label>
+                            <input type="checkbox" name="#" value="1" required>Acepto <a href="#" >Términos y condiciones </a>
+                          </label>
                         </div>
                       </div>
                     </div>

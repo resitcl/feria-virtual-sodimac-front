@@ -5,10 +5,13 @@
     <meta charset="UTF-8">
     <link href="img/favicon.png" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="css/main.css?v=92305" rel="stylesheet" type="text/css">
-    <script src="js/splide.js?v=92305" type="text/javascript"></script>
-    <script src="js/main.js?v=92305" type="text/javascript"></script>
-    <script src="js/splide-extension-auto-scroll.js?v=92305" type="text/javascript"></script>
+    <link href="css/main.css?v=76739" rel="stylesheet" type="text/css">
+    <script src="js/splide.js?v=76739" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.7/hammer.min.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script src="js/splide-extension-auto-scroll.js?v=76739" type="text/javascript"></script>
+    <script src="js/main.js?v=76739" type="text/javascript"></script>
     <!-- Meta tags facebook-->
     <meta property="og:title" content="#">
     <meta property="og:description" content="#">
@@ -381,7 +384,7 @@
         <div class="section__wrap"> 
           <div class="section__header"> 
             <h3 class="section__title">Noticias</h3>
-            <p class="section__description">Sociosqu semper semper ut vehicula ligula potenti venenatis consequat praesent orci sem diam hendrerit himenaeos.
+            <p class="section__description">Rhoncus viverra ut mollis hendrerit dictumst nulla mattis quam proin est platea ullamcorper convallis ullamcorper.
             </p>
           </div>
           <div class="section__body"> 
@@ -392,9 +395,9 @@
                     <div class="bg"> <img src="img/uploads/2.jpeg"></div>
                   </div>
                   <div class="article__body"> 
-                    <h4 class="article__title">Taciti felis tortor ultrices
+                    <h4 class="article__title">Dictumst enim platea per
                     </h4>
-                    <p class="article__description">Tempus diam auctor habitant ac morbi colus volutpat sollicitudin pretium sem diam.
+                    <p class="article__description">Ultrices nam pharetra taciti urna primis nunc integer quis orci porta mattis.
                     </p><a href="#" class="btn btn--link">Ver más <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -405,9 +408,9 @@
                     <div class="bg"> <img src="img/uploads/3.jpeg"></div>
                   </div>
                   <div class="article__body"> 
-                    <h4 class="article__title">Mi tempus curabitur rhoncus
+                    <h4 class="article__title">Tempor dictumst aliquam cras
                     </h4>
-                    <p class="article__description">Semper potenti blandit nam felis risus himenaeos mauris ultricies pretium aenean neque.
+                    <p class="article__description">Dapibus tellus fames porta elit sed praesent auctor urna suscipit iaculis per.
                     </p><a href="#" class="btn btn--link">Ver más <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -418,9 +421,9 @@
                     <div class="bg"> <img src="img/uploads/1.jpg"></div>
                   </div>
                   <div class="article__body"> 
-                    <h4 class="article__title">Egestas velit laoreet purus
+                    <h4 class="article__title">Eleifend donec velit risus
                     </h4>
-                    <p class="article__description">Vehicula cubilia pretium eget primis himenaeos semper congue nostra mauris eros aliquam.
+                    <p class="article__description">Nisl venenatis donec posuere taciti scelerisque colus scelerisque accumsan leo integer sed.
                     </p><a href="#" class="btn btn--link">Ver más <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -499,6 +502,133 @@
                         <div class="form__title">Mensaje</div>
                         <div class="form__input">
                           <textarea name="#" required></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12">
+                      <div class="form__button">
+                        <button class="btn">Enviar<span class="fa fa-pencil"></span></button>
+                      </div>
+                      <div class="form__alert"><span></span></div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal--profile">
+        <div class="modal__back"></div>
+        <div class="modal__front">
+          <div class="modal__box">
+            <div class="modal__close"><span class="fa fa-close">	</span></div>
+            <div class="modal__content">
+              <h3 class="modal__title">Complete su información</h3>
+              <div class="modal__form">
+                <form class="form form--register">
+                  <div class="cols">
+                    <div class="col-xs-12">
+                      <div class="form__element">
+                        <div class="form__title">Título del dato</div>
+                        <div class="form__input">
+                          <input type="text" name="#" placeholder="Restaurador de muebles" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12">
+                      <div class="form__element">
+                        <div class="form__title">Email</div>
+                        <div class="form__input">
+                          <input type="text" name="#" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12">
+                      <div class="form__element">
+                        <div class="form__title">Teléfono / Celular</div>
+                        <div class="form__input">
+                          <input type="text" name="#" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12">
+                      <div class="form__element">
+                        <div class="form__title">Rubro</div>
+                        <div class="form__input"> 
+                          <select name="#">
+                            <option value="#">Ante
+                            </option>
+                            <option value="#">Vitae
+                            </option>
+                            <option value="#">Eleifend
+                            </option>
+                            <option value="#">Vehicula
+                            </option>
+                            <option value="#">Scelerisque
+                            </option>
+                            <option value="#">Mi
+                            </option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-6">
+                      <div class="form__element">
+                        <div class="form__title">Ciudad</div>
+                        <div class="form__input"> 
+                          <select name="#">
+                            <option value="#">Sagittis
+                            </option>
+                            <option value="#">Nullam
+                            </option>
+                            <option value="#">Nulla
+                            </option>
+                            <option value="#">Ut
+                            </option>
+                            <option value="#">Donec
+                            </option>
+                            <option value="#">Dui
+                            </option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-6">
+                      <div class="form__element">
+                        <div class="form__title">Comuna</div>
+                        <div class="form__input"> 
+                          <select name="#">
+                            <option value="#">Maecenas
+                            </option>
+                            <option value="#">Purus
+                            </option>
+                            <option value="#">Per
+                            </option>
+                            <option value="#">Mauris
+                            </option>
+                            <option value="#">Lacinia
+                            </option>
+                            <option value="#">A
+                            </option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12">
+                      <div class="form__element">
+                        <div class="form__title">Descripción del servicio</div>
+                        <div class="form__input">
+                          <textarea name="#" required></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12">
+                      <div class="modal__checkboxs">
+                        <div class="modal__checkbox">
+                          <label>
+                            <input type="checkbox" name="#" value="1" required>Acepto <a href="#" >Términos y condiciones </a>
+                          </label>
                         </div>
                       </div>
                     </div>
