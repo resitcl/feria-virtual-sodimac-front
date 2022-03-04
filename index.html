@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <link href="img/favicon.png" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="css/main.css?v=40584" rel="stylesheet" type="text/css">
+    <link href="css/main.css?v=40977" rel="stylesheet" type="text/css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.7/hammer.min.js" type="text/javascript"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" type="text/javascript"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript"></script>
-    <script src="js/main.js?v=40584" type="text/javascript"></script>
+    <script src="js/main.js?v=40977" type="text/javascript"></script>
     <!-- Meta tags facebook-->
     <meta property="og:title" content="#">
     <meta property="og:description" content="#">
@@ -24,7 +24,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,300;0,400;0,500;0,700;1,300&amp;display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
+    <header class="header--public">
       <div class="header__primary">
         <div class="header__wrap">
           <div class="header__flex">
@@ -320,9 +320,9 @@
                     <div class="bg"> <img src="img/uploads/2.jpeg"></div>
                   </div>
                   <div class="article__body"> 
-                    <h4 class="article__title">Lacus adipiscing eu placerat
+                    <h4 class="article__title">Hendrerit sapien quis dapibus
                     </h4>
-                    <p class="article__description">Dui placerat curabitur suscipit etiam mi ullamcorper sodales turpis pellentesque sem curae.
+                    <p class="article__description">Aenean fermentum phasellus dictumst himenaeos velit erat urna quis aliquam fermentum rhoncus.
                     </p><a href="single-blog.html" class="btn btn--link">Ver más <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -333,9 +333,9 @@
                     <div class="bg"> <img src="img/uploads/3.jpeg"></div>
                   </div>
                   <div class="article__body"> 
-                    <h4 class="article__title">Cursus aptent posuere quisque
+                    <h4 class="article__title">Scelerisque vitae iaculis nisl
                     </h4>
-                    <p class="article__description">Elit donec sem sapien est torquent massa nullam tempor interdum vulputate eget.
+                    <p class="article__description">Congue tortor platea rutrum placerat pretium curabitur curabitur congue litora lacus consectetur.
                     </p><a href="single-blog.html" class="btn btn--link">Ver más <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -346,9 +346,9 @@
                     <div class="bg"> <img src="img/uploads/1.jpg"></div>
                   </div>
                   <div class="article__body"> 
-                    <h4 class="article__title">Magna rutrum nostra enim
+                    <h4 class="article__title">Cras platea ante non
                     </h4>
-                    <p class="article__description">Massa luctus laoreet congue neque tristique pulvinar fringilla vestibulum laoreet curabitur risus.
+                    <p class="article__description">Viverra nibh colus tempus aptent dapibus aenean vitae etiam fames vitae consectetur.
                     </p><a href="single-blog.html" class="btn btn--link">Ver más <span class="fa fa-angle-right"></span></a>
                   </div>
                 </article>
@@ -364,7 +364,7 @@
             <div class="modal__close"><span class="fa fa-close">	</span></div>
             <div class="modal__content">
               <h3 class="modal__title">Registrarse</h3>
-              <p class="modal__description">Lobortis primis adipiscing ad nibh colus urna tempor nostra fames nec duis tempor aliquam viverra.
+              <p class="modal__description">Sociosqu augue litora praesent eros nostra leo quam malesuada tellus faucibus conubia justo consectetur sociosqu.
               </p>
               <div class="modal__form">
                 <form class="form form--register form--validation">
@@ -461,24 +461,56 @@
               <h3 class="modal__title">Ingrese su rut para poder acceder a la Gran Feria de Capacitación</h3>
               <p class="modal__description">Si no está inscrito, <strong data-modal-inscripcion>Presione acá</strong></p>
               <div class="modal__form">
-                <form class="form form--register">
-                  <div class="cols">
-                    <div class="col-xs-12">
-                      <div class="form__element">
-                        <div class="form__title">Rut</div>
-                        <div class="form__input">
-                          <input type="text" name="#" required>
-                        </div>
-                      </div>
+                <div class="modal__tab"> 
+                  <div class="tabs tabs--login">
+                    <div class="tabs__header"> 
+                      <div class="tab tab--current">Chile</div>
+                      <div class="tab">Otros paises</div>
                     </div>
-                    <div class="col-xs-12">
-                      <div class="form__button">
-                        <button class="btn">Ingresar<span class="fa fa-user"></span></button>
+                    <div class="tabs__body">
+                      <div class="tab tab--current dscroll">
+                        <form class="form form--register form--validation">
+                          <div class="cols">
+                            <div class="col-xs-12">
+                              <div class="form__element">
+                                <div class="form__title">Rut</div>
+                                <div class="form__input">
+                                  <input type="rut" name="#" placeholder="Ingrese rut sin puntos ni guión" required class="input-rut">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__button">
+                                <button class="btn">Ingresar<span class="fa fa-user"></span></button>
+                              </div>
+                              <div class="form__alert"><span></span></div>
+                            </div>
+                          </div>
+                        </form>
                       </div>
-                      <div class="form__alert"><span></span></div>
+                      <div class="tab dscroll">
+                        <form class="form form--register form--validation">
+                          <div class="cols">
+                            <div class="col-xs-12">
+                              <div class="form__element">
+                                <div class="form__title">Email</div>
+                                <div class="form__input">
+                                  <input type="text" name="#" required>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="form__button">
+                                <button class="btn">Ingresar<span class="fa fa-user"></span></button>
+                              </div>
+                              <div class="form__alert"><span></span></div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
                     </div>
                   </div>
-                </form>
+                </div>
               </div>
             </div>
           </div>
