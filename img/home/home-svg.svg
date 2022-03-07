@@ -4,7 +4,7 @@
 	 viewBox="0 0 864 486" enable-background="new 0 0 864 486" xml:space="preserve">
 <g id="Layer_0_xA0_Image_1_">
 	
-	<image overflow="visible" width="2880" height="1620" id="Layer_0_xA0_Image" xlink:href="img/home/7F21BD26-v2.png"  transform="matrix(0.3 0 0 0.3 0 0)">
+	<image overflow="visible" width="2880" height="1620" id="Layer_0_xA0_Image" xlink:href="img/home/background-home.png"  transform="matrix(0.3 0 0 0.3 0 0)">
 	</image>
 </g>
 <g id="pantalla_xA0_Image_1_">
@@ -37,16 +37,7 @@
 		<image overflow="visible" opacity="0" width="433" height="158" id="informacion_xA0_Image" xlink:href="img/home/7F21BD25.png"  transform="matrix(0.3 0 0 0.3 355.2 413.4)">
 	</image>
 </g>
-<g id="gran_feria_1_xA0_Image_1_">
-	
-		<image overflow="visible" opacity="1" width="258" height="342" id="gran_feria_1_xA0_Image" xlink:href="img/home/logo-feria-virtual.svg"  transform="matrix(0.3 0 0 0.3 64.2 52.8)">
-	</image>
-</g>
-<g id="gran_feria_2_xA0_Image_1_">
-	
-		<image overflow="visible" opacity="1" width="258" height="342" id="gran_feria_2_xA0_Image" xlink:href="img/home/logo-feria-virtual.svg"  transform="matrix(0.3 0 0 0.3 726 52.8)">
-	</image>
-</g>
+
 <g id="gran_feria_3_xA0_Image_1_">
 	
 		<image overflow="visible" opacity="1" width="178" height="257" id="gran_feria_3_xA0_Image" xlink:href="img/home/logo-feria-virtual.svg"  transform="matrix(0.3 0 0 0.3 188.4 325.5)">
